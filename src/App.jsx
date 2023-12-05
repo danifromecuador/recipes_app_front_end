@@ -1,4 +1,5 @@
 import './App.css'
+import { Welcome } from './components/Welcome'
 
 function fetchData() {
   fetch('http://127.0.0.1:3000/health')
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>React App</h1>
+      <Welcome />
     </div>
   )
 }
