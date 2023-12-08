@@ -1,9 +1,13 @@
 import './App.css'
+import { Welcome } from './components/Welcome'
+import { HealthStatus} from './components/HealthStatus'
 
-function App() {
+function App() { 
+
   return (
     <div className="App">
-      <h1>React App</h1>
+      <Welcome />
+      <HealthStatus />
     </div>
   )
 }
