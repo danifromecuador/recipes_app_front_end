@@ -1,19 +1,13 @@
 import './App.css'
 import { Welcome } from './components/Welcome'
+import { HealthStatus} from './components/HealthStatus'
 
-function fetchData() {
-  fetch('http://127.0.0.1:3000/health')
-    .then(response => response.json())
-    .then(json => console.log(json))
-}
-
-
-function App() {
-  fetchData()  
+function App() { 
 
   return (
     <div className="App">
       <Welcome />
+      <HealthStatus />
     </div>
   )
 }
