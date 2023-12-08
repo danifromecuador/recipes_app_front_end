@@ -25,7 +25,7 @@ const healthSlice = createSlice({
         state.status = action.payload.status;  // "OK"
       })
       .addCase(fetchHealthStatus.rejected, (state, action) => {
-        state.status = 'failed';
+        state.status = action.error.message;
       });
   },
 });
